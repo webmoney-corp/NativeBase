@@ -759,6 +759,9 @@ declare module "native-base" {
 			tweenHandler?: Function;
 			type?: "overlay" | "static" | "displace";
 		}
+		interface DefaultTabBar extends Testable {
+			tabStyle?: RnViewStyleProp;
+		}
 		interface ScrollableTab extends Testable {
 			goToPage?: Function;
 			activeTab?: number;
@@ -1133,6 +1136,10 @@ declare module "native-base" {
      * NativeBase.Drawer
      */
 	export class Drawer extends React.Component<NativeBase.Drawer, any> { }
+	/**
+     * NativeBase.DefaultTabBar
+     */
+	export class DefaultTabBar extends React.Component<NativeBase.DefaultTabBar, any> { }
 	/**
      * NativeBase.ScrollableTab
      */
