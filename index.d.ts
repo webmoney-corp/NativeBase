@@ -927,7 +927,7 @@ declare module "native-base" {
      * Usage of Container's Header component is very similar to your HTML <head>.
      * The Content component of Container is nothing but the body section of your screen.
      */
-	export class Container extends React.Component<NativeBase.Container, any> { }
+	export class Container extends React.Component<PropsWithChildren<NativeBase.Container>, any> { }
 	/**
      * NativeBase.Header
      *
@@ -941,7 +941,7 @@ declare module "native-base" {
      * User can add custom styles while defining <Header> within their app.
      * Replacing Component: React Native <View>
      */
-	export class Header extends React.Component<NativeBase.Header, any> { }
+	export class Header extends React.Component<PropsWithChildren<NativeBase.Header>, any> { }
 	/**
      * NativeBase.Content
      *
@@ -955,15 +955,15 @@ declare module "native-base" {
 	/**
      * NativeBase.Left
      */
-	export class Left extends React.Component<NativeBase.Left, any> { }
+	export class Left extends React.Component<PropsWithChildren<NativeBase.Left>, any> { }
 	/**
      * NativeBase.Right
      */
-	export class Right extends React.Component<NativeBase.Right, any> { }
+	export class Right extends React.Component<PropsWithChildren<NativeBase.Right>, any> { }
 	/**
      * NativeBase.Body
      */
-	export class Body extends React.Component<NativeBase.Body, any> { }
+	export class Body extends React.Component<PropsWithChildren<NativeBase.Body>, any> { }
 
 	export class Content extends React.Component<NativeBase.Content, any> { }
 	/**
@@ -977,7 +977,7 @@ declare module "native-base" {
 	/**
      * NativeBase.Title
      */
-	export class Title extends React.Component<NativeBase.Title, any> { }
+	export class Title extends React.Component<PropsWithChildren<NativeBase.Title>, any> { }
 
 	export class Subtitle extends React.Component<NativeBase.Subtitle, any> { }
 
@@ -1009,7 +1009,7 @@ declare module "native-base" {
 	/**
      * NativeBase.Picker
      */
-	export class Picker extends React.Component<NativeBase.Picker, any> { }
+	export class Picker extends React.Component<PropsWithChildren<NativeBase.Picker>, any> { }
 	namespace Picker {
 		export class Item extends React.Component<ReactNative.PickerItemProps, any> { }
 	}
@@ -1150,17 +1150,17 @@ declare module "native-base" {
      * Tabs are a horizontal region of buttons or links that allow for a consistent navigation experience between screens.
      * It can contain any combination of text and icons, and is a popular method for enabling mobile navigation.
      */
-	export class Tabs extends React.Component<NativeBase.Tabs, any> { }
+	export class Tabs extends React.Component<PropsWithChildren<NativeBase.Tabs>, any> { }
 	/**
      * NativeBase.Tab
      */
-	export class Tab extends React.Component<NativeBase.Tab, any> { }
+	export class Tab extends React.Component<PropsWithChildren<NativeBase.Tab>, any> { }
 
-	export class TabHeading extends React.Component<NativeBase.TabHeading, any> { }
+	export class TabHeading extends React.Component<PropsWithChildren<NativeBase.TabHeading>, any> { }
 	/**
      * NativeBase.Item
      */
-	export class Item extends React.Component<NativeBase.Item, any> { }
+	export class Item extends React.Component<PropsWithChildren<NativeBase.Item>, any> { }
 	/**
      * NativeBase.Form
      */
@@ -1172,7 +1172,7 @@ declare module "native-base" {
 
 	export class Separator extends React.Component<NativeBase.Separator, any> { }
 
-	export class Label extends React.Component<NativeBase.Label, any> { }
+	export class Label extends React.Component<PropsWithChildren<NativeBase.Label>, any> { }
 
 	export class StyleProvider extends React.Component<NativeBase.StyleProvider, any> { }
 
