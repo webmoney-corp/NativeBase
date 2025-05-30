@@ -1,6 +1,12 @@
 /* eslint-disable class-methods-use-this */
 import React, { Component } from 'react';
-import { Keyboard, Platform, Animated, PanResponder } from 'react-native';
+import {
+  Keyboard,
+  Platform,
+  Animated,
+  PanResponder,
+  SafeAreaView
+} from 'react-native';
 import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 import { connectStyle } from 'native-base-shoutem-theme';
 
@@ -187,6 +193,7 @@ class ToastContainer extends Component {
             { transform: [{ translateX: x }, { translateY: y }] }
           ]}
         >
+          <SafeAreaView />
           <Toast
             style={[this.state.style]}
             danger={this.state.type === 'danger'}
